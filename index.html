@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alistair's Portfolio</title>
+    <style>
+        /* Add your custom CSS styles here */
+        @font-face {
+            font-family: 'Prata';
+            src: url('path-to-font-files/Prata-Regular.woff2') format('woff2'),
+                 url('path-to-font-files/Prata-Regular.woff') format('woff');
+            /* Add other font formats here if available (e.g., .ttf, .otf) */
+        }
+
+        @font-face {
+            font-family: 'Lota';
+            src: url('path-to-font-files/Lota-Regular.woff2') format('woff2'),
+                 url('path-to-font-files/Lota-Regular.woff') format('woff');
+            /* Add other font formats here if available (e.g., .ttf, .otf) */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif; /* Fallback font */
+            margin: 0;
+            padding: 0;
+            background-color: beige; /* Beige background color */
+        }
+
+        header {
+            background-color: #fff;
+            color: #333;
+            padding: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: flex;
+            justify-content: space-between; /* Add space between items */
+            align-items: center; /* Align items vertically */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            padding: 10px 20px;
+            background-color: #808000; /* Olive green color for tabs */
+            color: #fff; /* Text color for tabs */
+            border-radius: 20px;
+            text-decoration: none;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .contact-tab {
+            margin-left: auto; /* Push "My Contact" tab to the right */
+        }
+
+        .logo {
+            max-width: 100px;
+            margin-right: 20px; /* Add space between logo and tabs */
+        }
+
+        .photo-container {
+            display: flex;
+            align-items: center;
+            height: calc(100vh - 50px); /* Adjust height for header */
+        }
+
+        .photo {
+            max-width: 38%; /* Adjust the image size */
+            border-radius: 38%;
+            margin-right: 88px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .title {
+            font-size: 72px; /* Larger font size */
+            font-family: 'Prata', serif; /* Use the Prata font */
+	margin-left: 30px;            
+	margin-bottom: 10px;
+
+        }
+
+        .subtitle {
+            font-size: 36px; /* Larger font size */
+            font-family: 'Lota', serif; /* Use the Lota font */
+	margin-left: 33px;     
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="ISD Transparent Black.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About Me</a></li>
+                <li><a class="nav-link" href="#work">My Work</a></li>
+                <li><a class="nav-link" href="#testimonials">My Testimonials</a></li>
+                <li><a class="nav-link" href="#interests">My Interests</a></li>
+                <li class="contact-tab"><a class="nav-link" href="#contact">My Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="photo-container">
+        <img class="photo" src="RedShirt01.png" alt="Alistair's Photo">
+        <div class="info">
+            <div class="title">Hello! This is Alistair.</div>
+            <div class="subtitle">Instructional Designer | Trainer | Facilitator</div>
+        </div>
+    </div>
+
+    <!-- Rest of your HTML content -->
+
+</body>
+</html>
