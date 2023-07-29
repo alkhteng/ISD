@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alistair's Portfolio - My Portfolio</title>
+    <style>
+        /* Add your custom CSS styles here */
+        /* ... (previous styles) ... */
+
+         /* Center the "My Portfolio" section */
+        .portfolio-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Center the content inside each column */
+        .column {
+            text-align: center;
+        }
+
+        /* Adjust column width for responsive design */
+        @media screen and (max-width: 767px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        /* Reduce font size for titles in the "My Portfolio" section */
+        .portfolio-container h6.title {
+            font-size: 24px;
+        }
+
+        /* Add your custom CSS styles here */
+        @font-face {
+            font-family: 'Prata';
+            src: url('path-to-font-files/Prata-Regular.woff2') format('woff2'),
+                 url('path-to-font-files/Prata-Regular.woff') format('woff');
+            /* Add other font formats here if available (e.g., .ttf, .otf) */
+        }
+
+        @font-face {
+            font-family: 'Lota';
+            src: url('path-to-font-files/Lota-Regular.woff2') format('woff2'),
+                 url('path-to-font-files/Lota-Regular.woff') format('woff');
+            /* Add other font formats here if available (e.g., .ttf, .otf) */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif; /* Fallback font */
+            margin: 0;
+            padding: 0;
+            background-color: beige; /* Beige background color */
+        }
+
+        header {
+            background-color: #fff;
+            color: #333;
+            padding: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: flex;
+            justify-content: space-between; /* Add space between items */
+            align-items: center; /* Align items vertically */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            padding: 10px 20px;
+            background-color: #808000; /* Olive green color for tabs */
+            color: #fff; /* Text color for tabs */
+            border-radius: 20px;
+            text-decoration: none;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .contact-tab {
+            margin-left: auto; /* Push "My Contact" tab to the right */
+        }
+
+        .logo {
+            max-width: 100px;
+            margin-right: 20px; /* Add space between logo and tabs */
+            cursor: pointer; /* Add cursor pointer to the logo */
+        }
+
+        .photo-container {
+            display: flex;
+            align-items: center;
+            min-height: 50vh; /* Adjust height for the full viewport height */
+        }
+
+        .photo {
+            max-width: 38%; /* Adjust the image size to fill the container */
+            border-radius: 50%;
+        }
+
+        .info {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 28px; /* Larger font size */
+            font-family: 'Prata', serif; /* Use the Prata font */
+            margin-bottom: 5px; /* Adjust margin to reduce the gap */
+        }
+
+        .subtitle {
+            font-size: 20px; /* Larger font size */
+            font-family: 'Lota', serif; /* Use the Lota font */
+        }
+
+        /* Media queries for responsive design */
+
+        @media screen and (min-width: 768px) {
+            .photo-container {
+                height: calc(100vh - 100px); /* Adjust height for header and extra space for tabs */
+            }
+
+            .photo {
+                max-width: 38%; /* Adjust the image size */
+            }
+
+            .info {
+                text-align: left;
+                padding: 0; /* Reset padding for larger screens */
+            }
+
+            .title {
+                font-size: 72px; /* Larger font size */
+            }
+
+            .subtitle {
+                font-size: 36px; /* Larger font size */
+            }
+        }
+
+        /* Columns for past, present, future sections */
+        .column {
+            float: left;
+            width: 23%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style for audio container */
+        .audio-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+<a href="#" onclick="goHome(https://alkhteng.github.io/ISD/index.html)"><img class="logo" src="ISD Transparent Black.png" alt="Logo"></a>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/about">About Me</a></li>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/work">My Portfolio</a></li>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/testimonials">My Testimonials</a></li>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/interests">My Interests</a></li>
+                <li class="contact-tab"><a class="nav-link" href="https://alkhteng.github.io/ISD/contact">My Contact</a></li>
+            </ul>
+        </nav>
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Make the logo a link to the home page -->
+        <a href="index.html"><img class="logo" src="ISD Transparent Black.png" alt="Logo"></a>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/about">About Me</a></li>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/work">My Portfolio</a></li>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/testimonials">My Testimonials</a></li>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/interests">My Interests</a></li>
+                <li class="contact-tab"><a class="nav-link" href="https://alkhteng.github.io/ISD/contact">My Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="image-before-columns"><center>
+        <!-- Image content goes here -->
+        <img src="Celebrity.jpeg" alt="My Portfolio Image"></center>
+    </div>
+
+    <!-- "My Portfolio" Section -->
+    <section class="row portfolio-container">
+
+        <!-- Column: Instructional Design -->
+        <div class="column">
+            <h6 class="title">Instructional Design</h6>
+            <a href="https://github.com/alkhteng/InstructionalDesign">
+                <img src="id.png" alt="Instructional Design Icon">
+            </a>
+            <div class="write-up">
+                <!-- Write-up content goes here -->
+                <p style="font-family: 'Prata', serif;">
+                    It showcases the instructional design journey behind each projec.
+                </p>
+            </div>
+        </div>
+
+        <!-- Column: Learning Management System -->
+        <div class="column">
+            <h6 class="title">Learning Management System</h6>
+            <a href="https://github.com/alkhteng/LMS">
+                <img src="lms.png" alt="Learning Management System Icon">
+            </a>
+            <div class="write-up">
+                <!-- Write-up content goes here -->
+                <p style="font-family: 'Prata', serif;">
+                    Try out some of the modules for yourself.
+                </p>
+            </div>
+        </div>
+
+        <!-- Column: Video -->
+        <div class="column">
+            <h6 class="title">Video</h6>
+            <a href="https://github.com/alkhteng/Videos">
+                <img src="v.png" alt="Video Icon">
+            </a>
+            <div class="write-up">
+                <!-- Write-up content goes here -->
+                <p style="font-family: 'Prata', serif;">
+                    It encompasses a substantial portion of my past work.
+                </p>
+            </div>
+        </div>
+
+        <!-- Column: Learning Materials -->
+        <div class="column">
+            <h6 class="title">Learning Materials</h6>
+            <a href="https://github.com/alkhteng/LearningMaterial">
+                <img src="lm.png" alt="Learning Materials Icon">
+            </a>
+            <div class="write-up">
+                <!-- Write-up content goes here -->
+                <p style="font-family: 'Prata', serif;">
+                    Learning experience has been simplified and made accessible.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rest of your HTML content -->
+
+    <script>
+        // JavaScript code goes here if needed
+    </script>
+</body>
+</html>
