@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alistair's Portfolio - My Interests</title>
+    <style>
+        /* Add your custom CSS styles here */
+        /* ... (previous styles) ... */
+
+        /* Center the "My Interests" section */
+        .interests-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Adjust column width for responsive design */
+        @media screen and (max-width: 767px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        /* Reduce font size for titles in the "My Interests" section */
+        .interests-container h6.title {
+            font-size: 24px;
+        }
+
+        /* Add your custom CSS styles here */
+        @font-face {
+            font-family: 'Prata';
+            src: url('path-to-font-files/Prata-Regular.woff2') format('woff2'),
+                 url('path-to-font-files/Prata-Regular.woff') format('woff');
+            /* Add other font formats here if available (e.g., .ttf, .otf) */
+        }
+
+        @font-face {
+            font-family: 'Lota';
+            src: url('path-to-font-files/Lota-Regular.woff2') format('woff2'),
+                 url('path-to-font-files/Lota-Regular.woff') format('woff');
+            /* Add other font formats here if available (e.g., .ttf, .otf) */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif; /* Fallback font */
+            margin: 0;
+            padding: 0;
+            background-color: beige; /* Beige background color */
+        }
+
+        header {
+            background-color: #fff;
+            color: #333;
+            padding: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: flex;
+            justify-content: space-between; /* Add space between items */
+            align-items: center; /* Align items vertically */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            padding: 10px 20px;
+            background-color: #808000; /* Olive green color for tabs */
+            color: #fff; /* Text color for tabs */
+            border-radius: 20px;
+            text-decoration: none;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .contact-tab {
+            margin-left: auto; /* Push "My Contact" tab to the right */
+        }
+
+        .logo {
+            max-width: 100px;
+            margin-right: 20px; /* Add space between logo and tabs */
+            cursor: pointer; /* Add cursor pointer to the logo */
+        }
+
+        .photo-container {
+            display: flex;
+            align-items: center;
+            min-height: 50vh; /* Adjust height for the full viewport height */
+            justify-content: center; /* Center the photo and write-up horizontally */
+        }
+
+        .photo {
+            max-width: 38%; /* Adjust the image size to fill the container */
+            border-radius: 50%;
+        }
+
+        .info {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 20px; /* Larger font size */
+            font-family: 'Prata', serif; /* Use the Prata font */
+            margin-bottom: 5px; /* Adjust margin to reduce the gap */
+	text-align: center; /* Center the title */
+        }
+
+        .subtitle {
+            font-size: 14px; /* Larger font size */
+            font-family: 'Lota', serif; /* Use the Lota font */
+        }
+
+        /* Media queries for responsive design */
+
+        @media screen and (min-width: 768px) {
+            .photo-container {
+                height: calc(100vh - 100px); /* Adjust height for header and extra space for tabs */
+            }
+
+            .photo {
+                max-width: 38%; /* Adjust the image size */
+            }
+
+            .info {
+                text-align: left;
+                padding: 0; /* Reset padding for larger screens */
+            }
+
+            .title {
+                font-size: 48px; /* Larger font size */
+            }
+
+            .subtitle {
+                font-size: 36px; /* Larger font size */
+            }
+        }
+
+        /* Video container */
+        .video-container {
+            width: 80%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end; /* Move the video frame to the right */
+        }
+
+        /* Video styling */
+        .video {
+            width: 75%;
+            height: 630px; /* Adjust the video height */
+        }
+
+        /* Center the write-up horizontally */
+       .write-up-container {
+            display: flex;
+            justify-content: center;
+            text-align: justify; /* Justify the content */
+        }
+
+        /* Adjust write-up width for responsive design */
+        @media screen and (max-width: 767px) {
+            .write-up-container {
+                width: 100%;
+            }
+        }
+
+        /* Write-up content styling */
+        .write-up {
+            width: 60%;
+            text-align: justify;
+            font-family: 'Lota', serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Make the logo a link to the home page -->
+        <a href="https://alkhteng.github.io/ISD/index.html"><img class="logo" src="ISD Transparent Black.png" alt="Logo"></a>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/about">About Me</a></li>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/work">My Portfolio</a></li>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/testimonials">My Testimonials</a></li>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/interests">My Interests</a></li>
+                <li class="contact-tab"><a class="nav-link" href="https://alkhteng.github.io/ISD/contact">My Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="interests-container">
+        <h6 class="title">
+            <b>Embracing Diverse Passions: Enriching Life Beyond Work</b>
+        </h6>
+        <div class="write-up-container">
+            <!-- Write-up about your interest goes here -->
+            <p class="write-up">
+                <br>Life is a colourful canvas, transcending the confines of work. My diverse passions create an enriching tapestry of experiences. In my free time, culinary arts enrapture me as I explore flavours and techniques from around the world. City escapades harmonise with serene nature walks, allowing me to savour each moment.</br>
+
+<br>Amidst the hustle, Thai traditional massage anchors me to mindfulness, granting respite from the fast-paced world. Through photography, I capture fleeting beauty and profound emotions, cherishing memories that endure. Volunteering empowers me to create positive change, giving back to society and making a difference.</br>
+
+<br>Maintaining work-life balance is paramount. Embracing diverse passions nurtures my growth, fuels creativity, and enhances my professional journey. Dedication to this balance enables me to excel in my career and serve others with unwavering passion.
+</br>
+<br>Join me on this journey of self-discovery, growth, and meaningful experiences beyond a nine-to-five.</br> 
+            </p>
+        </div>
+    </div>
+
+    <!-- Video section -->
+    <section class="video-container">
+        <iframe class="video" src="https://player.vimeo.com/video/849851889" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Rest of your HTML content -->
+
+    <script>
+        // JavaScript code goes here if needed
+    </script>
+</body>
+
+</html>
