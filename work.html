@@ -167,6 +167,35 @@
             flex-direction: column;
             align-items: center;
         }
+
+/* Add a tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip::after {
+    content: "Click to access the content";
+    visibility: hidden;
+    width: 150px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
 <a href="#" onclick="goHome(https://alkhteng.github.io/ISD/index.html)"><img class="logo" src="ISD Transparent Black.png" alt="Logo"></a>
         <nav>
             <ul>
@@ -210,12 +239,14 @@
             <h6 class="title">Instructional Design</h6>
             <a href="https://github.com/alkhteng/InstructionalDesign">
                 <img src="id.png" alt="Instructional Design Icon">
-            </a>
+	    </a>
+		<div class="topic tooltip">
             <div class="write-up">
                 <!-- Write-up content goes here -->
                 <p style="font-family: 'Prata', serif;">
                     It showcases the instructional design journey behind each project.
                 </p>
+		</div>
             </div>
         </div>
 
@@ -225,12 +256,14 @@
             <a href="https://github.com/alkhteng/LMS">
                 <img src="lms.png" alt="Learning Management System Icon">
             </a>
-            <div class="write-up">
+            <div class="topic tooltip">
+	<div class="write-up">
                 <!-- Write-up content goes here -->
                 <p style="font-family: 'Prata', serif;">
                     Try out some of the modules for yourself.
                 </p>
-            </div>
+                  </div>
+		</div>
         </div>
 
         <!-- Column: Video -->
@@ -238,26 +271,30 @@
             <h6 class="title">Video</h6>
             <a href="https://github.com/alkhteng/Videos">
                 <img src="v.png" alt="Video Icon">
-            </a>
+		</a>
+	<div class="topic tooltip">
             <div class="write-up">
                 <!-- Write-up content goes here -->
                 <p style="font-family: 'Prata', serif;">
                     It encompasses a substantial portion of my past work.
                 </p>
+		</div>
             </div>
         </div>
 
-        <!-- Column: Learning Materials -->
+        <!-- Column: Learning Material -->
         <div class="column">
-            <h6 class="title">Learning Materials</h6>
+            <h6 class="title">Learning Material</h6>
             <a href="https://github.com/alkhteng/LearningMaterial">
-                <img src="lm.png" alt="Learning Materials Icon">
-            </a>
+                <img src="lm.png" alt="Learning Material Icon">
+            <div class="topic tooltip">
+		</a>
             <div class="write-up">
                 <!-- Write-up content goes here -->
                 <p style="font-family: 'Prata', serif;">
                     Learning experience has been simplified and made accessible.
                 </p>
+	       </div> 	
             </div>
         </div>
     </section>
