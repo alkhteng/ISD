@@ -1,54 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alistair's Portfolio - My Resume</title>
+    <title>Alistair's Portfolio - My Interests</title>
     <style>
         /* Add your custom CSS styles here */
         /* ... (previous styles) ... */
 
-        /* Center the "My Resume" section */
-        .resume-container {
+        /* Center the "My Interests" section */
+        .interests-container {
             display: flex;
-            justify-content: space-between; /* Add space between columns */
+            justify-content: center;
             flex-wrap: wrap;
-	    margin: 0 auto; /* Add margin to center the container */
-            max-width: 1000px; /* Adjust the maximum width as needed */
-        }
-
-        /* Center the content inside each column */
-        .column {
-            text-align: center;
-            padding: 20px; /* Add padding to create the gap between columns */
-            
         }
 
         /* Adjust column width for responsive design */
         @media screen and (max-width: 767px) {
             .column {
                 width: 100%;
-		
             }
         }
 
-        /* Reduce font size for titles in the "My Resume" section */
-        .resume-container h6.title {
-            font-size: 22px;
-        }
-
-        /* Adjust the height of each column to align properly */
-        .resume-container .column {
-            height: 100%;
-        }
-
-        /* Adjust the vertical alignment of the write-up */
-        .write-up {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-	    text-align: justify;
+        /* Reduce font size for titles in the "My Interests" section */
+        .interests-container h6.title {
+            font-size: 24px;
         }
 
         /* Add your custom CSS styles here */
@@ -118,6 +95,7 @@
             display: flex;
             align-items: center;
             min-height: 50vh; /* Adjust height for the full viewport height */
+            justify-content: center; /* Center the photo and write-up horizontally */
         }
 
         .photo {
@@ -131,13 +109,14 @@
         }
 
         .title {
-            font-size: 28px; /* Larger font size */
+            font-size: 20px; /* Larger font size */
             font-family: 'Prata', serif; /* Use the Prata font */
             margin-bottom: 5px; /* Adjust margin to reduce the gap */
+	text-align: center; /* Center the title */
         }
 
         .subtitle {
-            font-size: 20px; /* Larger font size */
+            font-size: 14px; /* Larger font size */
             font-family: 'Lota', serif; /* Use the Lota font */
         }
 
@@ -158,7 +137,7 @@
             }
 
             .title {
-                font-size: 72px; /* Larger font size */
+                font-size: 48px; /* Larger font size */
             }
 
             .subtitle {
@@ -166,68 +145,44 @@
             }
         }
 
-        /* Columns for past, present, future sections */
-        .column {
-            float: left;
-            width: 23%;
-            padding: 10px;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Style for audio container */
-        .audio-container {
+        /* Video container */
+        .video-container {
+            width: 80%;
+            margin-top: 20px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: flex-end; /* Move the video frame to the right */
         }
-/* Add a tooltip */
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
 
-.tooltip::after {
-    content: "Click to access my resume";
-    visibility: hidden;
-    width: 150px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
+        /* Video styling */
+        .video {
+            width: 75%;
+            height: 630px; /* Adjust the video height */
+        }
 
-.tooltip:hover::after {
-    visibility: visible;
-    opacity: 1;
-}
+        /* Center the write-up horizontally */
+       .write-up-container {
+            display: flex;
+            justify-content: center;
+            text-align: justify; /* Justify the content */
+        }
 
-<a href="https://alkhteng.github.io/ISD/index.html" onclick="goHome()"><img class="logo" src="ISD Transparent Black.png" alt="Logo"></a>
-        <nav>
-            <ul>
-                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/about">About Me</a></li>
-                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/work">My Portfolio</a></li>
-		<li><a class="nav-link" href="https://alkhteng.github.io/ISD/resume">My Resume</a></li>
-                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/testimonials">My Testimonials</a></li>
-                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/interests">My Interests</a></li>
-                <li class="contact-tab"><a class="nav-link" href="https://alkhteng.github.io/ISD/contact">My Contact</a></li>
-            </ul>
-        </nav>
+        /* Adjust write-up width for responsive design */
+        @media screen and (max-width: 767px) {
+            .write-up-container {
+                width: 100%;
+            }
+        }
+
+        /* Write-up content styling */
+        .write-up {
+            width: 60%;
+            text-align: justify;
+            font-family: 'Lota', serif;
+            font-size: 16px;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <!-- Make the logo a link to the home page -->
@@ -236,7 +191,6 @@
             <ul>
                 <li><a class="nav-link" href="https://alkhteng.github.io/ISD/about">About Me</a></li>
                 <li><a class="nav-link" href="https://alkhteng.github.io/ISD/work">My Portfolio</a></li>
-		<li><a class="nav-link" href="https://alkhteng.github.io/ISD/resume">My Resume</a></li>
                 <li><a class="nav-link" href="https://alkhteng.github.io/ISD/testimonials">My Testimonials</a></li>
                 <li><a class="nav-link" href="https://alkhteng.github.io/ISD/interests">My Interests</a></li>
                 <li class="contact-tab"><a class="nav-link" href="https://alkhteng.github.io/ISD/contact">My Contact</a></li>
@@ -244,70 +198,34 @@
         </nav>
     </header>
 
-    <div class="image-before-columns"><center>
-        <!-- Image content goes here -->
-        <img src="Resume.png" alt="My Resume Image"></center>
+    <div class="interests-container">
+        <h6 class="title">
+            <b>Embracing Diverse Passions: Enriching Life Beyond Work</b>
+        </h6>
+        <div class="write-up-container">
+            <!-- Write-up about your interest goes here -->
+            <p class="write-up">
+                <br>Life is a colourful canvas, transcending the confines of work. My diverse passions create an enriching tapestry of experiences. In my free time, culinary arts enrapture me as I explore flavours and techniques from around the world. City escapades harmonise with serene nature walks, allowing me to savour each moment.</br>
+
+<br>Amidst the hustle, Thai traditional massage anchors me to mindfulness, granting respite from the fast-paced world. Through photography, I capture fleeting beauty and profound emotions, cherishing memories that endure. Volunteering empowers me to create positive change, giving back to society and making a difference.</br>
+
+<br>Maintaining work-life balance is paramount. Embracing diverse passions nurtures my growth, fuels creativity, and enhances my professional journey. Dedication to this balance enables me to excel in my career and serve others with unwavering passion.
+</br>
+<br>Join me on this journey of self-discovery, growth, and meaningful experiences beyond a nine-to-five.</br> 
+            </p>
+        </div>
     </div>
 
-    <!-- "My Resume" Section -->
-    <section class="row resume-container">
+    <!-- Video section -->
+    <section class="video-container">
+        <iframe class="video" src="https://player.vimeo.com/video/849851889" frameborder="0" allowfullscreen></iframe>
+    </section>
 
-        <!-- Column: Learning Management Systems -->
-        <div class="column">
-        <h6 class="title">Learning Management Systems</h6>
-        <a href="https://github.com/alkhteng/Resume">
-        <img src="lms.png" alt="Learning Management Systems Icon">
-        </a>
-	<div class="topic tooltip">
-        <div class="write-up">
-        <!-- Write-up content goes here -->
-        <p style="font-family: 'Prata', serif;">
-        Transformative LMS adoption, achieving a remarkable 25% improvement in training effectiveness.
-        </p>
-	<span class="tooltiptext">Click to access my resume</span>
-        </div>
-        </div>
-        </div>
+    <!-- Rest of your HTML content -->
 
-        <!-- Column: Stakeholders Management -->
-        <div class="column">
-        <h6 class="title">Stakeholders Management</h6>
-        <a href="https://github.com/alkhteng/Resume">
-        <img src="sm.png" alt="Stakeholders Management Icon">
-        </a>
-        <div class="topic tooltip">
-        <div class="write-up">
-        <!-- Write-up content goes here -->
-        <p style="font-family: 'Prata', serif;">
-        Executed engaging e-learning and skillfully managing stakeholders, resulting in 15% revenue increase and 8% market share growth.
-        </p>
-        <span class="tooltiptext">Click to access my resume</span>
-        </div>
-        </div>
-        </div>
-
-        <!-- Column: Instructional Design & Training Development -->
-        <div class="column">
-        <h6 class="title">Instructional Design & Training Development</h6>
-        <a href="https://github.com/alkhteng/Resume">
-        <img src="td.png" alt="Instructional Design Icon">
-        </a>
-        <div class="topic tooltip">
-        <div class="write-up">
-        <!-- Write-up content goes here -->
-        <p style="font-family: 'Prata', serif;">
-        Onboarding toolkit based on andragogy principles with interactive e-learning, virtual simulations, and personalized coaching.
-        </p>
-        <span class="tooltiptext">Click to access my resume</span>
-        </div>
-        </div>
-        </div>
-        </section>
-
-        <!-- Rest of your HTML content -->
-  
-        <script>
+    <script>
         // JavaScript code goes here if needed
-        </script>
+    </script>
 </body>
+
 </html>
