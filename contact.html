@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experienced instructional designer, trainer and facilitator skilled in instruction design, training, LMS, LXD, pedagogy and andragogy principles. Check out my portfolio for examples of my work.">
+    <meta name="keywords" content="instructional designer, trainer, facilitator, portfolio, contact, phone, email, social media">
+    <meta name="author" content="Alistair Kinhee Teng">
+    <title>Alistair's Portfolio - My Contact</title>
+    <style>
+        /* Add your custom CSS styles here */
+        /* ... (previous styles) ... */
+
+        /* Center the "My Contact" section */
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1280px; /* Adjust the maximum width as needed */
+            margin: 0 auto; /* Add margin to center the container */
+        }
+
+        /* Add space between items */
+        .contact-container > * {
+            margin-bottom: 20px;
+        }
+
+        /* Reduce font size for title in the "My Contact" section */
+        .contact-title {
+            font-size: 28px;
+            font-family: 'Prata', serif; /* Use the Prata font */
+        }
+
+        /* Add your custom CSS styles here */
+         @font-face {
+            font-family: 'Prata';
+            src: url('path-to-font-files/Prata-Regular.woff2') format('woff2'),
+                 url('path-to-font-files/Prata-Regular.woff') format('woff');
+            /* Add other font formats here if available (e.g., .ttf, .otf) */
+        }
+
+        @font-face {
+            font-family: 'Lota';
+            src: url('path-to-font-files/Lota-Regular.woff2') format('woff2'),
+                 url('path-to-font-files/Lota-Regular.woff') format('woff');
+            /* Add other font formats here if available (e.g., .ttf, .otf) */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif; /* Fallback font */
+            margin: 0;
+            padding: 0;
+            background-color: beige; /* Beige background color */
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            color: #333;
+            padding: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        /* Rest of the styles for the tabs */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            padding: 10px 20px;
+            background-color: #808000; /* Olive green color for tabs */
+            color: #fff; /* Text color for tabs */
+            border-radius: 20px;
+            text-decoration: none;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .contact-tab {
+            margin-left: auto; /* Push "My Contact" tab to the right */
+        }
+
+        .logo {
+            max-width: 100px;
+            margin-right: 20px; /* Add space between logo and tabs */
+            cursor: pointer; /* Add cursor pointer to the logo */
+        }
+
+    </style>
+    </head>
+    <body>
+    <header>
+        <!-- Make the logo a link to the home page -->
+        <a href="https://alkhteng.github.io/ISD/index.html"><img class="logo" src="ISD Transparent Black.png" alt="Logo"></a>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/about">About Me</a></li>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/work">My Portfolio</a></li>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/resume">My Resume</a></li>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/testimonials">My Testimonials</a></li>
+                <li><a class="nav-link" href="https://alkhteng.github.io/ISD/interests">My Interests</a></li>
+                <li class="contact-tab"><a class="nav-link" href="https://alkhteng.github.io/ISD/contact">My Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- "My Contact" Section -->
+    <section class="contact-container">
+        <img src="t2m.png" alt="Contact Image">
+
+    <!-- Title -->
+        <p class="contact-title">Feel free to call, email, or hit me up.</p>
+
+    <!-- Phone -->
+        <p style="font-family: 'Lota', serif; margin-bottom: 5px;"><b>Phone</b></p>
+        <p style="font-family: 'Lota', serif; margin-bottom: 28px;">90237854</p>
+
+    <!-- Email -->
+        <p style="font-family: 'Lota', serif; margin-bottom: 5px;"><b>Email</b></p>
+        <a href="kasemsanthongsawn@icloud.com"><p style="font-family: 'Lota', serif; margin-bottom: 48px;">kasemsanthongsawan@icloud.com</p>
+
+    <!-- Social Media Icons -->
+<div class="social-icons">
+            <a href="https://www.linkedin.com/in/alistairkinheeteng" target="_blank"><img src="linkedin.png" alt="Linkedin Icon"></a>
+            <a href="https://github.com/alkhteng" target="_blank"><img src="github.png" alt="github Icon"></a>
+            <a href="https://alkhteng.github.io/Blog/" target="_blank"><img src="blogger.png" alt="Blog Icon"></a>
+            <a href="https://m.weibo.cn/u/7564443609" target="_blank"><img src="weibo.png" alt="Weibo Icon"></a>
+            <a href="https://vimeo.com/user204156542" target="_blank"><img src="vimeo.png" alt="Vimeo Icon"></a>
+        </div>
+    </section>
+	    
+    <!-- Rest of your HTML content -->
+
+    <script>
+        // JavaScript code goes here if needed
+
+        // Function to change the color of the icon when clicked
+        function changeIconColor(event, icon) {
+            event.preventDefault();
+            const iconElement = document.getElementById(icon);
+            iconElement.classList.toggle('active-icon');
+        }
+    </script>
+</body>
+
+</html>
